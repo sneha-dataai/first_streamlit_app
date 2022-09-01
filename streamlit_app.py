@@ -12,9 +12,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 st.header('Breakfast Menu')
-st.text('Omega 3 & blueberry Oatmeal')
-st.text('Kale, Spinach & Rocket Smoothie')
-st.text('Hard-Boiled Free-Range Egg')
+st.text('🥦Omega 3 & blueberry Oatmeal')
+st.text('🥬Kale, Spinach & Rocket Smoothie')
+st.text('🥚Hard-Boiled Free-Range Egg')
 
 
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
