@@ -6,6 +6,12 @@ st.markdown("""
 .big-font {
     font-size:50px !important;
 }
+.small-font {
+    font-size:20px !important;
+}
 </style>
 """, unsafe_allow_html=True)
 st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
+st.markdown('<p class="small-font">Omega 3 & blueberry Oatmeal</p>', unsafe_allow_html=True)
+st.markdown('<p class="small-font">Kale, Spinach & Rocket Smoothie</p>', unsafe_allow_html=True)
+st.markdown('<p class="small-font">Hard-Boiled Free-Range Egg</p>', unsafe_allow_html=True)
