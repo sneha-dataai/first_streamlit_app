@@ -61,7 +61,7 @@ fruit_add = streamlit.text_input('What fruit would you like to add?')
 #streamlit.write(fruit_add)
 streamlit.text('Thanks for adding '+ fruit_add)
 
-insert into fruit_load_list values ('from streamlit');
+my_cur.execute(insert into fruit_load_list values ('from streamlit')_;
 
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
 #st.markdown('<p class="small-font">Omega 3 & blueberry Oatmeal</p>', unsafe_allow_html=True)
