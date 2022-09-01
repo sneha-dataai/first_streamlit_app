@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas
 
 st.title('My Parents New Healthy Diner')
 st.markdown("""
@@ -16,6 +17,9 @@ st.text('🥦Omega 3 & blueberry Oatmeal')
 st.text('🥬Kale, Spinach & Rocket Smoothie')
 st.text('🥚Hard-Boiled Free-Range Egg')
 st.header('🍌Bulild your own fruit smoothie')
+
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+st.dataframe(my_fruit_list)
 
 
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
