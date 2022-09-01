@@ -1,5 +1,6 @@
 import streamlit #as st
 import pandas
+import snowflake.connector
 
 
 
