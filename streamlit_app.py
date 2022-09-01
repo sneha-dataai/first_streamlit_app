@@ -1,7 +1,7 @@
 import streamlit as st
 
-streamlit.title('My Parents New Healthy Diner')
-streamlit.markdown("""
+st.title('My Parents New Healthy Diner')
+st.markdown("""
 <style>
 .big-font {
     font-size:50px !important;
