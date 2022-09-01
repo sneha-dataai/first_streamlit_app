@@ -1,7 +1,7 @@
 import streamlit
 
 streamlit.title('My Parents New Healthy Diner')
-streamlit.markdown('"""
+streamlit.markdown("""
 <style>
 .big-font {
     font-size:30px !important;
