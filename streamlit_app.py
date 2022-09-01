@@ -42,6 +42,10 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response.json())
 
+# take the json and normalize - expand the attributes
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+# load the table into a dataframe
+streamlit.dataframe(fruityvice_normalized)
 
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
 #st.markdown('<p class="small-font">Omega 3 & blueberry Oatmeal</p>', unsafe_allow_html=True)
