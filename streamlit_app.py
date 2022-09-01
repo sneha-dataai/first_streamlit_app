@@ -57,6 +57,10 @@ my_data_row = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
+fruit_add = streamlit.text_input('What fruit would you like to add?')
+#streamlit.write(fruit_add)
+streamlit.text('Thanks for adding '+ fruit_add)
+
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
 #st.markdown('<p class="small-font">Omega 3 & blueberry Oatmeal</p>', unsafe_allow_html=True)
 #st.markdown('<p class="small-font">Kale, Spinach & Rocket Smoothie</p>', unsafe_allow_html=True)
