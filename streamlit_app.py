@@ -50,9 +50,8 @@ try:
         # take the json and normalize - expand the attributes
         fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
         # load the table into a dataframe
-        streamlit.dataframe(fruityvice_normalized)
-        
- except URLError as e:
+        streamlit.dataframe(fruityvice_normalized)       
+except URLError as e:
     streamlit.error()
         
 streamlit.write('The user entered ', fruit_choice)
