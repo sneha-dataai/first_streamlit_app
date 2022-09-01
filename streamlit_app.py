@@ -1,6 +1,8 @@
 import streamlit #as st
 import pandas
 
+
+
 streamlit.title('My Parents New Healthy Diner')
 streamlit.markdown("""
 <style>
@@ -31,6 +33,11 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
+
+#New section to display fruityvice api response
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
 
 
 #st.markdown('<p class="big-font">Breakfast Menu</p>', unsafe_allow_html=True)
